@@ -1,0 +1,126 @@
+{
+  "checksum": "735deb3f9cebe766ef8d700003798a4f",
+  "root": "topkg@link-dev:./package.json",
+  "node": {
+    "topkg@link-dev:./package.json": {
+      "id": "topkg@link-dev:./package.json",
+      "name": "topkg",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@5.3.0@d41d8cd9",
+        "@opam/ocamlfind@opam:1.9.9~preview@8d65c758",
+        "@opam/ocamlbuild@opam:0.16.1@6ccbffe8"
+      ],
+      "devDependencies": [],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    },
+    "ocaml@5.3.0@d41d8cd9": {
+      "id": "ocaml@5.3.0@d41d8cd9",
+      "name": "ocaml",
+      "version": "5.3.0",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-5.3.0.tgz#sha1:3b0a65035064f52cbd5b522920cf2dcac165d081"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": [],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    },
+    "@opam/ocamlfind@opam:1.9.9~preview@8d65c758": {
+      "id": "@opam/ocamlfind@opam:1.9.9~preview@8d65c758",
+      "name": "@opam/ocamlfind",
+      "version": "opam:1.9.9~preview",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/7f/7ffd8b8003bc0596cae2d9da65b859303f80336df1e1f5e9ae5eef86359e8d88#sha256:7ffd8b8003bc0596cae2d9da65b859303f80336df1e1f5e9ae5eef86359e8d88",
+          "archive:https://github.com/ocaml/ocamlfind/archive/1faecd4016c615e1d8806643c8e4eb3d08dcdf97.tar.gz#sha256:7ffd8b8003bc0596cae2d9da65b859303f80336df1e1f5e9ae5eef86359e8d88"
+        ],
+        "opam": {
+          "name": "ocamlfind",
+          "version": "1.9.9~preview",
+          "path": "esy.lock/opam/ocamlfind.1.9.9~preview"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@5.3.0@d41d8cd9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@5.3.0@d41d8cd9" ],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    },
+    "@opam/ocamlbuild@opam:0.16.1@6ccbffe8": {
+      "id": "@opam/ocamlbuild@opam:0.16.1@6ccbffe8",
+      "name": "@opam/ocamlbuild",
+      "version": "opam:0.16.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha512/e9/e918b9a0081f271e507c7a4f4d5d5a7cdf818ca51c52acec1bac85ddad5f6cad078cb3c568252fbcf5401c2d75323ed8f50fdd881bda1c9632840320408393ae#sha512:e918b9a0081f271e507c7a4f4d5d5a7cdf818ca51c52acec1bac85ddad5f6cad078cb3c568252fbcf5401c2d75323ed8f50fdd881bda1c9632840320408393ae",
+          "archive:https://github.com/ocaml/ocamlbuild/archive/refs/tags/0.16.1.tar.gz#sha512:e918b9a0081f271e507c7a4f4d5d5a7cdf818ca51c52acec1bac85ddad5f6cad078cb3c568252fbcf5401c2d75323ed8f50fdd881bda1c9632840320408393ae"
+        ],
+        "opam": {
+          "name": "ocamlbuild",
+          "version": "0.16.1",
+          "path": "esy.lock/opam/ocamlbuild.0.16.1"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@5.3.0@d41d8cd9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@5.3.0@d41d8cd9" ],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    },
+    "@esy-ocaml/substs@0.0.1@d41d8cd9": {
+      "id": "@esy-ocaml/substs@0.0.1@d41d8cd9",
+      "name": "@esy-ocaml/substs",
+      "version": "0.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": [],
+      "available": [
+        [ "darwin", "x86_64" ],
+        [ "darwin", "arm64" ],
+        [ "linux", "x86_64" ],
+        [ "windows", "x86_64" ]
+      ]
+    }
+  },
+  "platformSpecific": {}
+}
