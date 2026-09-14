@@ -1,0 +1,43 @@
+name: CI and web deployment
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Updating packages.
+        run: sudo apt update
+      - name: Install dependencies.
+        run: sudo apt install -y npm
+
+      - name: Installing esy.
+        run: npm install -g esy
+      - uses: esy/github-action@master
+        with:
+          cache-key: ${{ hashFiles('esy.lock/index.json') }}
+
+      - name: Compiling the project.
+        run: esy
+

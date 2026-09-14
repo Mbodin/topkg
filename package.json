@@ -1,0 +1,16 @@
+{
+  "name": "topkg",
+  "version": "2.0",
+  "description": "The transitory OCaml software packager",
+  "authors": "The topkg programmers",
+  "license": "ISC",
+  "esy": {
+    "build": "ocaml pkg/pkg.ml build --pkg-name %{name} --dev-pkg %{dev}"
+  },
+  "dependencies": {
+    "@opam/ocamlfind": ">= 1.6.1",
+    "@opam/ocamlbuild": "*",
+    "ocaml": ">= 4.08.0"
+  }
+}
+

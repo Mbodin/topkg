@@ -4,3 +4,6 @@ tmp
 *.install
 *.native
 *.byte
+
+*~
+_esy/
