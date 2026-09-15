@@ -5,13 +5,8 @@
   "authors": "The topkg programmers",
   "license": "ISC",
   "esy": {
-    "build": "./compile.sh #{self.name} #{self.dev}",
-		"buildsInSource": true,
-		"buildEnv": {
-			"OCAMLTOP_INCLUDE_PATH": "#{@opam/ocamlfind.install}:#{ocaml.toplevel}:#{ocaml.lib}",
-			"OCAML_TOPLEVEL_PATH": "#{@opam/ocamlfind.install}:#{ocaml.toplevel}:#{ocaml.lib}",
-			"OCAML_PATHS": "#{@opam/ocamlfind.lib}/findlib"
-		}
+    "build": "ocaml pkg/pkg.ml build --pkg-name #{self.name} --dev-pkg #{self.dev}",
+		"buildsInSource": true
   },
   "dependencies": {
     "@opam/ocamlfind": ">= 1.6.1",

@@ -1,9 +1,5 @@
 #!/usr/bin/env ocaml
 
-#use_output "echo \"#directory \\\"$OCAML_PATHS\\\"\""
-
-(* #use "topfind" *)
-
 (* Bootstrap from source, note #mod_use is 4.01 *)
 #directory "src"
 #mod_use "topkg_result.ml"
